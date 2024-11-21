@@ -28,8 +28,12 @@
           <a class="nav-link {{ request()->routeIs('upload') ? 'active' : '' }}" href="{{ route('upload') }}">Upload File</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link {{ request()->routeIs('product') ? 'active' : '' }}" href="{{ route('product') }}">Product List</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link {{ request()->routeIs('logout') ? 'active' : '' }}" href="{{ route('logout') }}">Logout</a>
         </li>
+        
         
         @endauth
       </ul>

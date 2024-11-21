@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthManager;
 use App\Http\Controllers\ForgetPasswordManager;
+use App\Http\Controllers\ProductManager;
 use App\Http\Controllers\UploadManager;
 use Illuminate\Support\Facades\Route;
 
@@ -41,3 +42,5 @@ Route::get('/forget-password', [ForgetPasswordManager::class,'forgetPassword'])-
 Route::post('/forget-password', [ForgetPasswordManager::class,'forgetPasswordPost'])->name('forgetPassword.post');
 
 Route::get('reset-password/{token}', [ForgetPasswordManager::class,'resetPassword'])->name('resetPassword');
+
+Route::get('/product', [ProductManager::class, 'index'])->name('product');

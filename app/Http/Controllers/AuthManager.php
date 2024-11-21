@@ -32,7 +32,7 @@ class AuthManager extends Controller
 
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
-            return redirect()->intended(route('users.index'));
+            return redirect()->intended(route('home'));
         }
         return redirect(route('login'))->with("error", "Login details are not valid...");
     }
