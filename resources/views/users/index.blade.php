@@ -23,7 +23,7 @@
                     <tr>
                         <td>{{ $user->name }}</td>
                         <td>{{ $user->email }}</td>
-                        <td>{{ $user->phone ?? 'N/A' }}</td> <!-- Display 'N/A' if phone is null -->
+                        <td>{{ $user->phone ?? 'N/A' }}</td>
                     </tr>
                 @endforeach
             </tbody>

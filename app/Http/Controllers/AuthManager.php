@@ -56,7 +56,7 @@ class AuthManager extends Controller
 
             return redirect(route('registration'))->intended(route('login'))->with("error", "Registration Failed,try Again...!!!");
         }
-        return redirect(route('login'))->with("success", "Login SuccessFull...!!!");
+        return redirect(route('login'));
     }
         function logout(){
             Session::flush();

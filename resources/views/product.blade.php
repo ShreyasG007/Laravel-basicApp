@@ -22,7 +22,7 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ $product->name }}</h5>
                         <p class="card-text">{{ Str::limit($product->description, 100) }}</p>
-                        <p class="card-text">Price: ${{ number_format($product->price, 2) }}</p>
+                        <p class="card-text">Price: Rs.{{ number_format($product->price, 2) }}</p>
                         <a href="#" class="btn btn-primary">Add to Cart</a>
                     </div>
                 </div>
